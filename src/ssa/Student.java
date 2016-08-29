@@ -100,7 +100,7 @@ public class Student {
 	}
 	
 	public void buildHashDB(){
-		String lowkey = " ", highkey = "999999";
+		String lowkey = "000000", highkey = "999999";
 		for(Student s: students){
 			studentsDB.put(s.getId(s), s.getStudent(s));
 		}
@@ -127,8 +127,9 @@ public class Student {
 	
 		System.out.println("Empl Id	First Name  \tLast Name \tEye Color    Months at SSA");
 		System.out.println("======= ==========  \t========= \t=========    =============");
-		System.out.println(studentsDB.get("006789"));
+		
 		System.out.println(studentsDB.get(lowkey));
+		System.out.println(studentsDB.get("006789"));
 		System.out.println(studentsDB.get(highkey));
 		
 	}
